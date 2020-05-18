@@ -30,4 +30,37 @@ By default, the tool runs for 24 hours (this is the recommended amount of time t
 
 In the Excel file you will find two sheets, one for ATA sizing, and the second for Azure ATP.
 
-If you choose to deploy Standalone Sensors, in the Excel results file, under Azure ATP summary tab, use the following fields to determine the AATP Sensor specifications needed: 
+If you choose to [deploy Standalone Sensors](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-capacity-planning#azure-atp-sensor-and-standalone-sensor-sizing-a-namesizinga), in the Excel results file, under Azure ATP summary tab, use the following fields to determine the AATP Sensor specifications needed: 
+
+Match the "Busy Packets/sec" field in the Sensor table of the results file to the **"PACKETS PER SECOND"** field in the [AATP Sensor table or the AATP Standalone Sensor](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-capacity-planning#azure-atp-sensor-and-standalone-sensor-sizing-a-namesizinga) depending on the [Sensor type you choose](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-capacity-planning#choosing-the-right-sensor-type-for-your-deployment). 
+
+To choose which domain controllers the tool evaluates remotely, use one of the following command line parameters:
+
+| Command line parameters(evaluates remotely) | Evaluation |
+| :------------------------------------------ | :----------- |
+| `-DomainFQDN=<Domain FQDN>` | Evaluates all the domain controllers in the specified domain. |
+| `-InputDCListFile=<File path>` |Evaluates all the domain controllers in the specified file (each domain controller is presented on a separate line). |
+| `-UseCurrent=UserDomain` | Evaluates all the domain controllers in the domain of the user running the tool. |
+| `-UseCurrent=ComputerDomain` | Evaluates all the domain controllers in the domain of the computer running the tool.|
+| `-UseCurrent=Forest` | Evaluates all the domain controllers in the entire forest. |
+
+If none of the above are specified, UseCurrent=UserDomain is used.
+
+For more options, run "TriSizingTool -?"
+
+Verified on the following platforms:
+
+| OS  | Is Verified |
+| :------------- | :------------- |
+| Windows 10  | Yes  |
+| Windows Server 2012  | Yes  |
+| Windows Server 2012 R2  | Yes  |
+| Windows Server 2008 R2  | Yes  |
+| Windows Server 2008  | Yes  |
+| Windows Server 2003  | No  |
+| Windows Server 2016  | No  |
+| Windows 8  | Yes  |
+| Windows 7  | Yes  |
+| Windows Vista  | No  |
+| Windows XP  | No  |
+| Windows 2000  | No  |
