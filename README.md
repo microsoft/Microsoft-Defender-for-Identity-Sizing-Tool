@@ -1,5 +1,7 @@
 # Azure Advanced Threat Protection Sizing Tool - Version 1.3.0.0
 
+[**Click here to download the tool**](https://github.com/microsoft/ATA-AATP-Sizing-Tool/releases)
+
 The sizing tool automates collection of the amount of traffic Azure ATP would need to monitor and automatically provides supportability and resource recommendations for both the ATA (Center and Gateway) and Azure ATP (Sensor).
 It is recommended that you run the Azure ATP sizing tool as follows:
 
@@ -48,3 +50,5 @@ Verified on the following platforms:
 | Windows Vista  | No  |
 | Windows XP  | No  |
 | Windows 2000  | No  |
+
+[**Click here to download the tool**](https://github.com/microsoft/ATA-AATP-Sizing-Tool/releases)
