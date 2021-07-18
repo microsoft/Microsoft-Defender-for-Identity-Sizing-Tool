@@ -1,4 +1,4 @@
-# Azure Advanced Threat Protection Sizing Tool - Version 1.3.0.0
+# Microsoft Defender for Identity Sizing Tool - Version 1.3.0.0
 
 [**Click here to download the tool**](https://github.com/microsoft/ATA-AATP-Sizing-Tool/releases)
 
