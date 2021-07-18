@@ -2,8 +2,8 @@
 
 [**Click here to download the tool**](https://github.com/microsoft/ATA-AATP-Sizing-Tool/releases)
 
-The sizing tool automates collection of the amount of traffic Azure ATP would need to monitor and automatically provides supportability and resource recommendations for both the ATA (Center and Gateway) and Azure ATP (Sensor).
-It is recommended that you run the Azure ATP sizing tool as follows:
+The sizing tool automates collection of the amount of traffic MDI would need to monitor and automatically provides supportability and resource recommendations for both the ATA (Center and Gateway) and MDI (Sensor).
+It is recommended that you run the MDI sizing tool as follows:
 
 - With domain admin credentials
 - From a domain-joined workstation that has network access to all the domain controllers on the following ports: TCP 135, TCP 389 ,TCP 445 and TCP RPC Dynamic Ports. If these ports are blocked, you may experience an error message "Remote Registry Query Failed" in the OS Server Level field
@@ -14,7 +14,7 @@ The sizing tool uses the RPC protocol, specifically Remote WMI and Remote PerfMo
 
 By default, the tool runs for 24 hours (this is the recommended amount of time to run it) and gathers data including the packets/sec counter, operating system version, compute utilization, and memory utilization.
 
-In the Excel file you will find two sheets, one for ATA sizing, and the second for Azure ATP.
+In the Excel file you will find two sheets, one for ATA sizing, and the second for MDI.
 
 If you choose to [deploy Standalone Sensors](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-capacity-planning#azure-atp-sensor-and-standalone-sensor-sizing-a-namesizinga), in the Excel results file, under Azure ATP summary tab, use the following fields to determine the AATP Sensor specifications needed: 
 
