@@ -38,17 +38,20 @@ Verified on the following platforms:
 
 | OS  | Is Verified |
 | :------------- | :------------- |
-| Windows 10  | Yes  |
-| Windows Server 2012  | Yes  |
-| Windows Server 2012 R2  | Yes  |
-| Windows Server 2008 R2  | Yes  |
-| Windows Server 2008  | Yes  |
-| Windows Server 2003  | No  |
-| Windows Server 2016  | No  |
-| Windows 8  | Yes  |
-| Windows 7  | Yes  |
-| Windows Vista  | No  |
-| Windows XP  | No  |
+| Windows Server 2022     | Yes |
+| Windows Server 2019     | Yes |
+| Windows Server 2016     | Yes |
+| Windows Server 2012 R2  | Yes |
+| Windows Server 2012     | Yes |
+| Windows Server 2008 R2  | Yes |
+| Windows Server 2008     | Yes |
+| Windows Server 2003     | No  |
+| Windows 11    | Yes |
+| Windows 10    | Yes |
+| Windows 8     | Yes |
+| Windows 7     | Yes |
+| Windows Vista | No  |
+| Windows XP    | No  |
 | Windows 2000  | No  |
 
 [**Click here to download the tool**](https://github.com/microsoft/ATA-AATP-Sizing-Tool/releases)
