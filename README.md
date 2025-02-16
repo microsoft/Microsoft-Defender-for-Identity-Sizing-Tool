@@ -14,6 +14,10 @@ The sizing tool uses the RPC protocol, specifically Remote WMI and Remote PerfMo
 
 By default, the tool runs for 24 hours (this is the recommended amount of time to run it) and gathers data including the packets/sec counter, operating system version, compute utilization, and memory utilization.
 
+> [!TIP]
+> Do not run the tool using an account that is a member of the [Protected Users Group](https://learn.microsoft.com/windows-server/security/credentials-protection-and-management/protected-users-security-group#protections-applied-by-active-directory). It will prevent the user from renewing the Kerberos TGTs beyond the initial four-hour lifetime, and the tool will fail to authenticate to the remote server(s).
+>
+
 In the Excel file you will find two sheets, one for ATA sizing, and the second for MDI.
 
 If you choose to [deploy Standalone Sensors](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-capacity-planning#azure-atp-sensor-and-standalone-sensor-sizing-a-namesizinga), in the Excel results file, under Azure ATP summary tab, use the following fields to determine the AATP Sensor specifications needed: 
